@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjima va Ovoz chiqarish</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tarjima va Ovoz chiqarish</h1>
+
+        <label for="text-input">Matnni kiriting:</label>
+        <textarea id="text-input" placeholder="Bu yerga yozing..."></textarea>
+
+        <div class="row">
+            <button id="speak-original">🔊 Originalni o‘qitish</button>
+        </div>
+
+        <div class="row">
+            <label for="language">Qaysi tilga tarjima qilaylik:</label>
+            <select id="language">
+                <option value="ru">Rus tili</option>
+                <option value="en">Ingliz tili</option>
+                <option value="uz">O‘zbek tili</option>
+                <option value="tr">Turk tili</option>
+                <option value="fr">Fransuz tili</option>
+                <option value="de">Nemis tili</option>
+                <option value="es">Ispan tili</option>
+            </select>
+            <button id="translate-button">🌐 Tarjima qilish</button>
+        </div>
+
+        <label for="translated-text">Tarjima natijasi:</label>
+        <textarea id="translated-text" readonly placeholder="Tarjima shu yerda chiqadi..."></textarea>
+        <button id="speak-translated">🔊 Tarjimani o‘qitish</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
